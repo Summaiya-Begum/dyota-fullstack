@@ -93,7 +93,7 @@ function EmailForm() {
     }, [formData]);
 
     return (
-        <div className=" w-full h-full flex flex-col px-14 py-16">
+        <div className=" w-full h-full flex flex-col py-2 px-14 md:py-16">
             <div className="flex flex-col md:flex-col-reverse lg:flex-row gap-6 justify-center ">
                 <div className="w-full lg:w-[60%] flex flex-col gap-4 md:gap-10 justify-center ">
                     <motion.p
@@ -216,7 +216,7 @@ function EmailForm() {
                                 />
                             </div>
 
-                            <div className="w-full flex flex-col md:flex-col lg:flex-col gap-6 md:gap-12 justify-start">
+                            <div className="w-full flex flex-col md:flex-col lg:flex-col gap-6 md:gap-12 justify-start mb-6 md:mb-0">
                                 <div>
                                     <p>
                                         By clicking the submit button you agree to our{" "}
@@ -240,7 +240,7 @@ function EmailForm() {
                         initial="initial"
                         animate="animate"
                         variants={animationVariants}
-                        transition={{ duration: 1 }} className="lex flex-col space-y-5 px-2">
+                        transition={{ duration: 1 }} className="lex flex-col space-y-5 px-2 mb-10 md:mb-2">
                         <p className="text-lg font-bold">BUSINESS INQUIRIES</p>
                         <p className="text-md">
                             {" "}

@@ -134,12 +134,12 @@ export const Dyota = () => {
 
 
               <div
-                className=" w-[100%] h-auto px-10 py-20 md:py-16 md:px-20  m-auto gap-10  overflow-hidden md:grid md:grid-cols-2 md:gap-10  md:m-auto  md:justify-center md:overflow-visible lg:grid-cols-3 "
+                className=" w-[100%] h-auto px-10 py-20 md:py-16 md:px-20  m-auto grid gap-10 md:grid-cols-2 md:gap-10  md:m-auto  md:justify-center lg:grid-cols-3 "
               >
                 {productData?.map((el: any, i: any) => (
                   <motion.div
                     key={el.id}
-                    className="px-8 py-8 shadow-lg shadow-green-500/50 hover:shadow-lg hover:shadow-green-800/80 font-medium rounded-xl cursor-pointer"
+                    className="px-8 py-8 shadow-2xl shadow-green-500/60 hover:shadow-lg hover:shadow-green-800/100 font-medium rounded-2xl cursor-pointer"
                     initial={{ opacity: 0, translateY: -100 }}
                     whileInView={{ opacity: 1, translateY: -60 }}
                     viewport={{ once: true, amount: 0.3 }}
