@@ -149,7 +149,7 @@ export const Dyota = () => {
                     <p className="text-lg font-semibold mt-2">Price: <span className="text-green-500 text-[1.2vw] font-normal ml-5"> ${el.price}</span></p>
                     <p className="text-lg font-semibold">Rating: <span className=" text-[1.2vw] font-normal ml-2">{el.rating.rate}</span></p>
                     <p className="text-lg font-semibold">Category: <span className=" text-[1.2vw] font-normal">{el.category}</span></p>
-                    <p className="text-lg font-semibold h-12" > <span className=" text-[1.2vw] font-normal">Title: {el.title}</span></p>
+                    <p className="text-lg font-semibold h-[10vh]" >Title: <span className=" text-[1.2vw] font-normal"> {el.title}</span></p>
                     <div className="flex items-center justify-center mt-6 bg-[#3BD188] text-black font-semibold text-lg hover:bg-black hover:text-[#3BD188] rounded-2xl">
                       <button className="px-4 py-2 ">Show Details</button>
                     </div>
