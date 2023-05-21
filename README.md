@@ -20,7 +20,7 @@ https://client-alpha-plum.vercel.app/
 ## Backend deployed Link  🔗
 https://dyota-sendmail-api.onrender.com/mail/send
 
-## How to run locally ?
+## How to run frontend locally ?
  1. clone it
  2. Install node_modules
      ```
@@ -28,7 +28,7 @@ https://dyota-sendmail-api.onrender.com/mail/send
      ```
  3. start it
      ```
-     npm run start
+     npm start
      ```
 
 
