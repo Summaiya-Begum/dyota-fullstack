@@ -99,7 +99,7 @@ export const Dyota = () => {
                       repeat: Infinity,
                       repeatType: "reverse",
                     }}
-                    className={`w-[10vw] h-[10vw] ${motionDiv.className}`}
+                    className={`w-[13vw] h-[13vw] rounded-full  ${motionDiv.className}`}
                   ></motion.div>
                 ))}
               </div>
