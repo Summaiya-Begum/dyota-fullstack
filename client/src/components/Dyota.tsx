@@ -117,7 +117,7 @@ export const Dyota = () => {
                 }}
                 className="w-[15vw] h-[15vw] flex items-center justify-center border-2 border-black rounded-full"
               >
-                <p className="text-md md:text-2xl font-bold ">Welcome</p>
+                <p className="text-sm md:text-2xl font-bold ">Welcome</p>
               </motion.div>
             </div>
           </div>
@@ -177,9 +177,6 @@ export const Dyota = () => {
 
           )
       }
-
-
-
     </div>
   );
 };

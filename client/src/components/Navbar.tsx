@@ -40,7 +40,7 @@ const Navbar = () => {
             animate={{ y: "0vh", rotate: openMenu ? 90 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            <div className="h-[0.2rem] w-4 bg-[#3BD188]"></div>
+            <div className="h-[0.1rem] w-4 bg-[#3BD188]"></div>
             <div className="h-[0.1rem] w-4 bg-[#3BD188]"></div>
             <div className="h-[0.1rem] w-4 bg-[#3BD188]"></div>
           </motion.div>
