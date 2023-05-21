@@ -4,6 +4,7 @@ import AuthInputField from "./InputField";
 import axios from "axios";
 import UpIcon from "../assets/UpIcon";
 import { motion } from "framer-motion";
+import AuthTextArea from "./AuthTextArea";
 
 const budget = [
     { value: "$25-$50K" },
@@ -202,6 +203,17 @@ function EmailForm() {
                                         headingLabel="Aprroximate budget"
                                     />
                                 </div>
+                            </div>
+
+                            <div className=" w-full lg:w-full ">
+                                <AuthTextArea
+                                    heading="PROJECT SUMMARY"
+                                    formData={formData}
+                                    setFormData={setFormData}
+                                    value="summary"
+                                    placeholder="Enter your project summary"
+                                    required={true}
+                                />
                             </div>
 
                             <div className="w-full flex flex-col md:flex-col lg:flex-col gap-6 md:gap-12 justify-start">

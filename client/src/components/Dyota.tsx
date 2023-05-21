@@ -84,7 +84,7 @@ export const Dyota = () => {
 
       {
         isLoading ? (
-          <div className="relative min-h-[100svh] h-[100svh]">
+          <div className="relative h-[100vh]">
             <div className="flex items-center justify-center h-[92vh] absolute w-full">
               <div className="grid grid-cols-2 ">
                 {motionDivs.map((motionDiv, index) => (
@@ -117,7 +117,7 @@ export const Dyota = () => {
                 }}
                 className="w-[15vw] h-[15vw] flex items-center justify-center border-2 border-black rounded-full"
               >
-                <p className="text-2xl font-bold ">Welcome</p>
+                <p className="text-md md:text-2xl font-bold ">Welcome</p>
               </motion.div>
             </div>
           </div>
