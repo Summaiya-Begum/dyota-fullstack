@@ -30,7 +30,7 @@ const AuthTextArea: React.FC<AuthTextAreaProps> = ({
 
   return (
     <div className="relative">
-      <div className="font-gilroy-semibold text-xs flex text-white ml-1">
+      <div className="font-semibold text-xs flex text-black ml-1">
         {heading}
         {required && (
           <p className="ml-1 text-xxs text-[#3BD188]">✷</p>
@@ -39,7 +39,7 @@ const AuthTextArea: React.FC<AuthTextAreaProps> = ({
       <textarea
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full md:w-[41vw] lg:w-[30vw] h-20 border border-pot-black px-2 border-t-0 border-l-0 border-r-0 hover:border-t-0 hover:border-l-0 hover:border-r-0 outline-none text-md bg-white text-black font-normal hover:border-2 hover:border-[#3BD188] hover:border-opacity-50 focus:bg-white focus:border-[#3BD188] placeholder:text-[#A2A2A2] placeholder:text-sm active:border-b-[#A2A2A2]"
+        className="w-full h-20 border border-pot-black px-2 border-t-0 border-l-0 border-r-0 hover:border-t-0 hover:border-l-0 hover:border-r-0 outline-none text-md bg-white text-black font-normal hover:border-2 hover:border-[#3BD188] hover:border-opacity-50 focus:bg-white focus:border-[#3BD188] placeholder:text-[#A2A2A2] placeholder:text-sm active:border-b-[#A2A2A2]"
         value={formData?.[value] || ""}
         required
       />

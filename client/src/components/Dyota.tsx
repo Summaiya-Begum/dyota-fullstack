@@ -110,7 +110,7 @@ export const Dyota = () => {
                 animate={{ opacity: "0%" }}
                 exit={{ opacity: "100%" }}
                 transition={{
-                  duration: 3,
+                  duration: 1,
                   ease: "easeInOut",
                   repeat: Infinity,
                   repeatType: "reverse",

@@ -205,7 +205,7 @@ function EmailForm() {
                                 </div>
                             </div>
 
-                            <div className=" w-full lg:w-full ">
+                            <div className=" w-full">
                                 <AuthTextArea
                                     heading="PROJECT SUMMARY"
                                     formData={formData}
