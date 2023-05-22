@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import EmailForm from "./components/EmailForm";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 import Thoughts from "./components/Thoughts";
 import Contact from "./components/Contact";
 
@@ -29,7 +29,7 @@ function App() {
 
             <Route path="/email-form" element={<EmailForm />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            {/* <Route path="/projects" element={<Projects />} /> */}
             <Route path="/thoughts" element={<Thoughts />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="*" element={<Navigate to="page-not-found" />} />
