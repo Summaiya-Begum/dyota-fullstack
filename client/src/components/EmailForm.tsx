@@ -83,36 +83,35 @@ function EmailForm() {
         });
     };
 
-
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        axios
-            .post("https://dyota-sendmail-api.onrender.com/mail/send", formData)
-            .then((response: any) => {
-                console.log(response);
-                setSuccess(response.data);
-                handleOpenModal()
-            })
-            .catch((error: any) => {
-                console.error("Form submission error:", error);
-            });
+
+        if (!formData.name || !formData.email || !formData.phone_number || !formData.services || !formData.location || !formData.organization || !formData.website || !formData.budget || !formData.summary) {
+            setError("Please fill out all required fields");
+            return;
+        } else {
+            axios
+                .post("https://dyota-sendmail-api.onrender.com/mail/send", formData)
+                .then((response: any) => {
+                    console.log(response);
+                    setSuccess(response.data);
+                    handleOpenModal()
+                })
+                .catch((error: any) => {
+                    console.error("Form submission error:", error);
+                });
+
+        }
     };
-
-
-
-    // useEffect(() => {
-    //     console.log(formData, "formData");
-    // }, [formData,]);
-
 
     return (
 
         <>
-            
-                { openModal && (
-                    <Modal message={success} onClose={handleCloseModal} />
-                )}
-            
+
+            {openModal && (
+                <Modal message={success} onClose={handleCloseModal} />
+            )}
+
             <div className=" w-full h-full flex flex-col py-2 px-14 md:py-16">
                 <div className="flex flex-col md:flex-col-reverse lg:flex-row gap-6 justify-center ">
                     <div className="w-full lg:w-[60%] flex flex-col gap-4 md:gap-10 justify-center ">
@@ -149,7 +148,8 @@ function EmailForm() {
                 </div>
 
                 <div className="mt-10">
-                    <p className="py-4">"*" indicates required fields</p>
+                    <p className="py-4 text-red-500
+                    ">"*" {error}</p>
 
                     <div className="flex flex-col md:flex-col lg:flex-row justify-center gap-10 ">
                         <div>
